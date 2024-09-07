@@ -1,2 +1,4 @@
 healthchecks.env
 logs/
+*.gz
+*.sql

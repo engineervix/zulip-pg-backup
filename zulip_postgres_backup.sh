@@ -25,6 +25,9 @@
 
 set -e  # Exit immediately if any command fails
 
+# 1. cd to project directory
+cd "${HOME}/SITES/zulip-pg-backup" || { echo "Failed to change directory."; exit 1; }
+
 # Source the .env file so we can retrieve healthchecks.io ping URL
 # shellcheck source=/dev/null
 source healthchecks.env
